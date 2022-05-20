@@ -6,38 +6,62 @@
             </div>
             <div>
                 <ul class="list mt-5 me-2">
-                    <li class="d-flex mb-3">
+                    <router-link to="./" style="text-decoration: none;">
+                    <li class="d-flex mb-4 p-1">
+                        <div>
                         <img src="./img/dashboard.png" alt="" class="me-2 img-fluid">
+                        </div>
                         <h6>Dashboard</h6>
                     </li>
-                    <li class="d-flex mb-3">
+                    </router-link>
+                    <li class="d-flex mb-4">
+                        <div>
                         <img src="./img/User.png" alt="" class="me-2 img-fluid">
+                        </div>
                         <h6>My Profile</h6>
                     </li>
-                    <li class="d-flex mb-3">
+                    <li class="d-flex mb-4">
+                        <div>
                         <img src="./img/Wishlist.png" alt="" class="me-2 img-fluid">
+                        </div>
                         <h6>Wishlist</h6>
                     </li>
-                    <li class="d-flex mb-3">
+                    <router-link to="./enrolled" style="text-decoration:none">
+                    <li class="d-flex mb-4">
+                        <div>
                         <img src="./img/Books.png" alt="" class="me-2 img-fluid">
+                        </div>
                         <h6>Enrolled Courses</h6>
                     </li>
-                    <li class="d-flex mb-3">
+                    </router-link>
+                    <router-link to="./main" style="text-decoration:none">
+                    <li class="d-flex mb-4">
+                        <div>
                         <img src="./img/active.png" alt="" class="me-2 img-fluid">
+                        </div>
                         <h6>Active Courses</h6>
                     </li>
-                    <li class="d-flex mb-3">
+                    </router-link>
+                    <li class="d-flex mb-4">
+                        <div>
                         <img src="./img/Confirmed.png" alt="" class="me-2 img-fluid">
+                        </div>
                         <h6>Completed Courses</h6>
                     </li>
-                    <li class="d-flex mb-3">
+                    <router-link to="./upload" style="text-decoration:none">
+                    <li class="d-flex mb-4">
+                        <div>
                         <img src="./img/Projects.png" alt="" class="me-2 img-fluid">
+                        </div>
                         <h6>Project Page</h6>
                     </li>
-                    <li class="d-flex mb-3">
-                        <span><img src="./img/unity.png" alt="" class="me-2 img-fluid"></span>
+                    </router-link>
+                    <router-link to="./community" style="text-decoration:none">
+                    <li class="d-flex mb-4">
+                        <div><img src="./img/unity.png" alt="" class="me-2 img-fluid"></div>
                         <h6>Student Community</h6>
                     </li>
+                    </router-link>
                     <li class="" style="margin-top: 900px; list-style: none;" >
                         <div style="border: 1px solid #000000; padding: 0px;" class="mb-3"></div>
                         <div class="d-flex">
@@ -144,3 +168,17 @@
         </div>
     </div>
 </template>
+
+<style scoped>
+    li:hover {
+        background-color: #C01C03;
+        width: 250px;
+        height: 50px;
+        padding-top: 15px;
+        border-radius: 10px;
+    }
+
+    li {
+        color: #FFFFFF;
+    }
+</style>

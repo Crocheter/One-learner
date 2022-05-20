@@ -14,6 +14,8 @@ import community from './components/Community/community.vue';
 import assignment from './components/Assignments/assignment.vue';
 import certificate from './components/Certificate/certificate.vue';
 import upload from './components/Upload/upload.vue'
+import details from './components/Assignments/assignDetails.vue'
+import main from './components/Assignments/intoAssignment.vue'
 
 const app = createApp(App);
 
@@ -27,6 +29,8 @@ const routes = createRouter({
         { path:'/assignment', component: assignment},
         { path:'/certificate', component: certificate},
         { path:'/upload', component: upload},
+        { path:'/assigned', component: details},
+        { path:'/main', component: main},
     ]
 })
 
